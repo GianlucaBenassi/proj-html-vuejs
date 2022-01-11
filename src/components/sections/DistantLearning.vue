@@ -22,7 +22,7 @@
                     <img src="../../assets/img/maxcoach-shape-08.png" alt="shape 01" class="shape sh-01">
                     <img src="../../assets/img/maxcoach-shape-07.png" alt="shape 02" class="shape sh-02">
                     <img src="../../assets/img/maxcoach-shape-02.png" alt="shape 03" class="shape sh-03">
-                    <div class="shape sh-04 koromiko-border"></div>
+                    <div class="shape circle-shape koromiko"></div>
                 </div>
 
             </div>
@@ -124,16 +124,6 @@ export default {
         &.sh-03 {
             top: 20%;
             right: -20px;
-            z-index: 1;
-        }
-
-        &.sh-04 {
-            padding: 20px;
-            border-width: 6px;
-            border-style: solid;
-            border-radius: 50%;
-            bottom: 20%;
-            left: 0;
             z-index: 1;
         }
     }

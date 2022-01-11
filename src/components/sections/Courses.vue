@@ -3,11 +3,11 @@
         <div class="container py-5">
             
             <h3 class="sub-title text-center">Stimulated to learn?</h3>
-            <h2 class="mt-2 medium-title text-center">Featured Online Courses</h2>
+            <h2 class="mt-2 mb-5 medium-title text-center">Featured Online Courses</h2>
 
             <div class="row">
-                <div class="col-6">
-                    <CourseCard/>
+                <div class="col-6 mb-5" v-for="(course, index) in courses" :key="index">
+                    <CourseCard :courseInfo="course"/>
                 </div>
             </div>
 
@@ -25,7 +25,7 @@ export default {
     },
     data() {
         return {
-            Courses: [
+            courses: [
                 {
                     title: 'Learning to Write as a Professional Author',
                     price: 40.00,

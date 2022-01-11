@@ -30,11 +30,13 @@
                         </li>
 
                         <!-- search bar -->
-                        <li class="custom-search">
-                            <input type="text" placeholder="Search...">
-                            <button>
-                                <i class="fas fa-search"></i>
-                            </button>
+                        <li class="search-bar">
+                            <div class="custom-search">
+                                <input type="text" placeholder="Search...">
+                                <button>
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
                         </li>
 
                     </ul>
@@ -87,19 +89,18 @@ header {
             justify-content: flex-end;
 
             & > li {
-                height: 100%;
                 margin-left: 30px;
                 position: relative;
-                line-height: 80px;
 
                 & > a {
-
+                    display: flex;
+                    align-items: center;
                     height: 100%;
-                    display: inline-block;
 
                     .fa-chevron-down {
                         font-size: .6em;
                         margin-left: 5px;
+                        margin-top: 5px;
                     }
                 }
 
@@ -133,6 +134,11 @@ header {
                     color: $mainGreen;
                 }
             }
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
         }
     }
 }

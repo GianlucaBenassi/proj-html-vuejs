@@ -122,6 +122,7 @@ header {
             left: -10px;
             padding: 20px 40px 20px 20px;
             border-bottom: 5px solid $mainGreen;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
 
             & > ul > li {
                 white-space: nowrap;

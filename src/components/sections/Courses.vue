@@ -1,6 +1,11 @@
 <template>
-    <section>
-        
+    <section class="section-bg-grey">
+        <div class="container">
+            
+            <h3 class="sub-title text-center">Stimulated to learn?</h3>
+            <h2 class="medium-title text-center">Featured Online Courses</h2>
+
+        </div>
     </section>
 </template>
 
@@ -10,6 +15,12 @@ export default {
 }
 </script>
 
-<style lang='scss'>
+<style lang='scss' scoped>
+
+.container {
+    padding: 50px 0;
+}
+
+
 
 </style>

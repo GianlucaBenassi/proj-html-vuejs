@@ -12,10 +12,15 @@
                 <nav class="col-9">
                     <ul>
                         <li v-for="(link, index) in navLinks" :key="index">
-                            <a href="#">{{link.title}}</a>
+                            <a href="#" class="text-color">{{link.title}} <i class="fas fa-chevron-down"></i></a> 
                         </li>
-                        <li>LoginImage</li>
-                        <li>TextBar</li>
+                        <li class="text-color"><i class="far fa-user-circle"></i></li>
+                        <li class="custom-search">
+                            <input type="text" placeholder="Search...">
+                            <button>
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </li>
                     </ul>
                 </nav>
 
@@ -58,6 +63,15 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            a {
+
+                .fa-chevron-down {
+                    font-size: .6em;
+                    margin-left: 5px;
+                }
+            }
+
         }
     }
 }

@@ -12,4 +12,9 @@ export default {
 
 <style lang='scss' scoped>
 
+footer {
+    height: 200px;
+    background-color: green;
+}
+
 </style>

@@ -12,4 +12,9 @@ export default {
 
 <style lang='scss' scoped>
 
+main {
+    height: 800px;
+    background-color: blue;
+}
+
 </style>

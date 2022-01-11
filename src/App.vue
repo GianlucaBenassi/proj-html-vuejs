@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header :navLinks="navText"/>
     <Main/>
     <Footer/>
   </div>

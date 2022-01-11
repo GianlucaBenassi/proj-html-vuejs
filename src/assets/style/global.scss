@@ -26,6 +26,16 @@ a {
     text-decoration: none;
 }
 
+h1,h2,h3,h4 {
+    color: $titleColor;
+}
+
+.big-title {
+    font-size: 2.5rem;
+}
+
+
+// ----- custom search bar -----
 
 .custom-search {
     position: relative;
@@ -73,4 +83,12 @@ a {
 
 .text-color {
     color: $textColor;
+}
+
+.text-color-light {
+    color: $textColorLight;
+}
+
+.text-green {
+    color: $mainGreen;
 }

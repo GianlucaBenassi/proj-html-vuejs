@@ -1,16 +1,19 @@
 <template>
     <main>
         <DistantLearning/>
+        <Courses/>
     </main>
 </template>
 
 <script>
-import DistantLearning from '../sections/DistantLearning.vue'
+import DistantLearning from '../sections/DistantLearning.vue';
+import Courses from '../sections/Courses.vue';
 
 export default {
     name: 'Main',
     components: {
-        DistantLearning
+        DistantLearning,
+        Courses
     }
 }
 </script>

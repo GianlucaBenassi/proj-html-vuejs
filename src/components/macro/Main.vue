@@ -1,20 +1,20 @@
 <template>
     <main>
-
+        <DistantLearning/>
     </main>
 </template>
 
 <script>
+import DistantLearning from '../sections/DistantLearning.vue'
+
 export default {
-    name: 'Main'
+    name: 'Main',
+    components: {
+        DistantLearning
+    }
 }
 </script>
 
 <style lang='scss' scoped>
-
-main {
-    height: 1800px;
-    background-color: #fff;
-}
 
 </style>

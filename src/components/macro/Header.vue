@@ -60,6 +60,11 @@ export default {
 
 header {
     height: 80px;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px 1px rgba(0,0,0,.1);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 
     .container, 
     .row {

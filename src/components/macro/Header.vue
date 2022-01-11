@@ -4,18 +4,18 @@
             <div class="row">
 
                 <!-- logo -->
-                <div class="col-4 logo">
+                <div class="col-3 logo">
                     <img src="../../assets/img/dark-logo.png" alt="MaxCoach logo">
                 </div>
 
                 <!-- navbar -->
-                <nav class="col-8">
+                <nav class="col-9">
                     <ul>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
+                        <li v-for="(link, index) in navLinks" :key="index">
+                            <a href="#">{{link.title}}</a>
+                        </li>
+                        <li>LoginImage</li>
+                        <li>TextBar</li>
                     </ul>
                 </nav>
 
@@ -49,6 +49,15 @@ header {
 
         img {
             height: 40%;
+        }
+    }
+
+    nav {
+        ul {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     }
 }

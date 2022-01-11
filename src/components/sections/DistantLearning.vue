@@ -9,11 +9,11 @@
                 <div class="col title">
                     <h1 class="big-title">Distant learning for futher expansion</h1>
                     <p class="text-color-light">Learning is a life-long journey that in fact we find the terminate stop. Stop searching, enjoy the process.</p>
-                    <button><i class="fas fa-download"></i> Download free guide</button>
+                    <button class="btn-green"><i class="fas fa-download"></i> Download free guide</button>
                     <a href="#" class="text-color-light">
                         Have questions? 
                         <span class="text-green">Get Free Sample <i class="fas fa-long-arrow-alt-right"></i></span>
-                        </a>
+                    </a>
                 </div>
 
                 <!-- image -->

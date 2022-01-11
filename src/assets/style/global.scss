@@ -27,7 +27,7 @@ a {
 }
 
 h1,h2,h3,h4 {
-    color: $titleColor;
+    color: $gunPowder;
 }
 
 .big-title {
@@ -77,6 +77,24 @@ h1,h2,h3,h4 {
         }
     }
 }
+
+
+// ----- custom button -----
+
+.btn-green {
+    color: #fff;
+    background-color: $mainGreen;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 60px;
+    cursor: pointer;
+    transition: all .5s;
+
+    &:hover {
+        background-color: $gunPowder;
+    }
+}
+
 
 
 // ***** variables classes *****

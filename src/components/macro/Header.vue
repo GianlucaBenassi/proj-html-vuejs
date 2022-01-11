@@ -4,17 +4,17 @@
             <div class="row">
 
                 <!-- logo -->
-                <div class="col-3 logo">
+                <div class="col-3 logo d-flex align-items-center">
                     <img src="../../assets/img/dark-logo.png" alt="MaxCoach logo">
                 </div>
 
                 <!-- navbar -->
                 <nav class="col-9">
-                    <ul>
+                    <ul class="d-flex justify-content-end">
                         
                         <!-- dynamic links -->
                         <li v-for="(link, index) in navLinks" :key="index">
-                            <a href="#" class="text-color">{{link.title}} <i class="fas fa-chevron-down"></i></a>
+                            <a href="#" class="text-color d-flex align-items-center">{{link.title}} <i class="fas fa-chevron-down"></i></a>
                             <div class="dropdown">
                                 <ul>
                                     <li v-for="text in link.links" :key="text">
@@ -26,11 +26,11 @@
 
                         <!-- login icon -->
                         <li>
-                            <a href="#" class="text-color"><i class="far fa-user-circle"></i></a> 
+                            <a href="#" class="text-color d-flex align-items-center"><i class="far fa-user-circle"></i></a> 
                         </li>
 
                         <!-- search bar -->
-                        <li class="search-bar">
+                        <li class="d-flex align-items-center">
                             <div class="custom-search">
                                 <input type="text" placeholder="Search...">
                                 <button>
@@ -73,28 +73,20 @@ header {
         height: 100%;
     }
 
-    .logo {
-        display: flex;
-        align-items: center;
-
-        img {
-            height: 40%;
-        }
+    .logo img {
+        height: 40%;
+        
     }
 
     nav {
         & > ul {
             height: 100%;
-            display: flex;
-            justify-content: flex-end;
 
             & > li {
                 margin-left: 30px;
                 position: relative;
 
                 & > a {
-                    display: flex;
-                    align-items: center;
                     height: 100%;
 
                     .fa-chevron-down {
@@ -134,11 +126,6 @@ header {
                     color: $mainGreen;
                 }
             }
-        }
-
-        .search-bar {
-            display: flex;
-            align-items: center;
         }
     }
 }

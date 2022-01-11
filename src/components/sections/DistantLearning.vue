@@ -1,16 +1,16 @@
 <template>
     <section>
-        <div class="container">
+        <div class="container py-5">
 
             <!-- title row -->
-            <div class="row row-top">
+            <div class="row align-items-center mb-5">
 
                 <!-- title -->
                 <div class="col title">
                     <h1 class="big-title">Distant learning for further expansion</h1>
-                    <p class="text-color-light">Learning is a life-long journey that in fact we find the terminate stop. Stop searching, enjoy the process.</p>
-                    <button class="btn-green"><i class="fas fa-download"></i> Download free guide</button>
-                    <a href="#" class="text-color-light">
+                    <p class="mt-2 text-color-light">Learning is a life-long journey that in fact we find the terminate stop. Stop searching, enjoy the process.</p>
+                    <button class="mt-5 mb-4 btn-green"><i class="fas fa-download"></i> Download free guide</button>
+                    <a href="#" class="d-block text-color-light">
                         Have questions? 
                         <span class="text-green">Get Free Sample <i class="fas fa-long-arrow-alt-right"></i></span>
                     </a>
@@ -28,7 +28,7 @@
             </div>
 
             <!-- logos row -->
-            <div class="row row-bottom">
+            <div class="row align-items-center row-bottom">
                 
                 <div class="col">
                     <img src="../../assets/img/client-logo-01.png" alt="stylus logo">
@@ -68,35 +68,8 @@ export default {
 
 <style lang='scss' scoped>
 
-.container {
-    padding: 50px 0;
-}
-
-.row {
-    align-items: center;
-
-    &.row-top {
-        margin-bottom: 60px;
-    }
-}
-
-.title {
-
-    p {
-        margin-top: 10px;
-    }
-
-    button {
-        margin: 40px 0 20px 0;
-    }
-
-    a {
-        display: block;
-
-        span {
-            font-weight: bold;
-        }
-    }
+.title a span {
+    font-weight: bold;
 }
 
 .me-image {

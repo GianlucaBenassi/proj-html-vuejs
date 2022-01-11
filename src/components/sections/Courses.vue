@@ -5,8 +5,8 @@
             <h3 class="sub-title text-center">Stimulated to learn?</h3>
             <h2 class="mt-2 mb-5 medium-title text-center">Featured Online Courses</h2>
 
-            <div class="row">
-                <div class="col-6 mb-5" v-for="(course, index) in courses" :key="index">
+            <div class="row row-cols-2 g-5">
+                <div class="col" v-for="(course, index) in courses" :key="index">
                     <CourseCard :courseInfo="course"/>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 <template>
-    <div class="row">
+    <div class="row py-3 ms_card">
 
         <!-- image -->
         <div class="col-auto">
@@ -15,7 +15,7 @@
             </span>
             <span v-else class="price text-green">{{courseInfo.price}}</span>
             
-            <h4 class="my-3">{{courseInfo.title}}</h4>
+            <h4 class="my-3 hover-text-green">{{courseInfo.title}}</h4>
             <div class="infos">
                 <span class="text-color-light me-5"><i class="far fa-file-alt"></i> {{courseInfo.lessons}} Lessons</span>
                 <span class="text-color-light"><i class="far fa-user"></i> {{courseInfo.students}} Students</span>
@@ -56,6 +56,16 @@ export default {
 
 <style lang='scss' scoped>
 
+.ms_card {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover {
+        background-color: #fff;
+    }
+}
+
 img {
     width: 170px;
     height: 170px;
@@ -65,11 +75,16 @@ img {
 
 .price {
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 
     .cents {
         font-size: initial;
     }
+}
+
+h4 {
+    font-size: 1.2rem;
+    transition: all .3s;
 }
 
 .fa-file-alt,

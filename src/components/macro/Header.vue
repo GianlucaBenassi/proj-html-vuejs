@@ -4,13 +4,19 @@
             <div class="row">
 
                 <!-- logo -->
-                <div class="col logo">
+                <div class="col-4 logo">
                     <img src="../../assets/img/dark-logo.png" alt="MaxCoach logo">
                 </div>
 
                 <!-- navbar -->
-                <nav class="col">
-
+                <nav class="col-8">
+                    <ul>
+                        <li>link</li>
+                        <li>link</li>
+                        <li>link</li>
+                        <li>link</li>
+                        <li>link</li>
+                    </ul>
                 </nav>
 
             </div>

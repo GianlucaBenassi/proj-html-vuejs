@@ -28,7 +28,31 @@
             </div>
 
             <!-- logos row -->
-            <div class="row">
+            <div class="row row-bottom">
+                
+                <div class="col">
+                    <img src="../../assets/img/client-logo-01.png" alt="stylus logo">
+                </div>
+                
+                <div class="col">
+                    <img src="../../assets/img/client-logo-02.png" alt="coffe tree logo">
+                </div>
+                
+                <div class="col">
+                    <img src="../../assets/img/client-logo-03.png" alt="brook logo">
+                </div>
+                
+                <div class="col">
+                    <img src="../../assets/img/client-logo-04.png" alt="pencil logo">
+                </div>
+                
+                <div class="col">
+                    <img src="../../assets/img/client-logo-05.png" alt="its alive! logo">
+                </div>
+                
+                <div class="col">
+                    <img src="../../assets/img/client-logo-06.png" alt="sixbase logo">
+                </div>
 
             </div>
 
@@ -48,8 +72,12 @@ export default {
     padding: 50px 0;
 }
 
-.row-top {
+.row {
     align-items: center;
+
+    &.row-top {
+        margin-bottom: 60px;
+    }
 }
 
 .title {
@@ -108,6 +136,15 @@ export default {
             left: 0;
             z-index: 1;
         }
+    }
+}
+
+.row-bottom img {
+    opacity: 50%;
+    transition: all .3s;
+    
+    &:hover {
+        opacity: 100%;
     }
 }
 

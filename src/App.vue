@@ -45,7 +45,7 @@ export default {
         },
         {
           title: 'Pages',
-          Links: [
+          links: [
             'Start Here',
             'Success Story',
             'About me',
@@ -61,7 +61,7 @@ export default {
         },
         {
           title: 'Courses',
-          Links: [
+          links: [
             'Courses Grid 01',
             'Courses Grid 02',
             'Courses Grid 03',
@@ -74,14 +74,14 @@ export default {
         },
         {
           title: 'Features',
-          Links: [
+          links: [
             'Events',
             'Zoom Meetings'
           ]
         },
         {
           title: 'Blog',
-          Links: [
+          links: [
             'Blog Grid',
             'Blog Masonry',
             'Blog Classic',
@@ -90,7 +90,7 @@ export default {
         },
         {
           title: 'Shop',
-          Links: [
+          links: [
             'Shop Left Sidebar',
             'Shop Right Sidebar',
             'Cart',

@@ -11,16 +11,32 @@
                 <!-- navbar -->
                 <nav class="col-9">
                     <ul>
+                        
+                        <!-- dynamic links -->
                         <li v-for="(link, index) in navLinks" :key="index">
-                            <a href="#" class="text-color">{{link.title}} <i class="fas fa-chevron-down"></i></a> 
+                            <a href="#" class="text-color">{{link.title}} <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li v-for="text in link.links" :key="text">
+                                        <a href="#" class="text-color">{{text}}</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
-                        <li class="text-color"><i class="far fa-user-circle"></i></li>
+
+                        <!-- login icon -->
+                        <li>
+                            <a href="#" class="text-color"><i class="far fa-user-circle"></i></a> 
+                        </li>
+
+                        <!-- search bar -->
                         <li class="custom-search">
                             <input type="text" placeholder="Search...">
                             <button>
                                 <i class="fas fa-search"></i>
                             </button>
                         </li>
+
                     </ul>
                 </nav>
 
@@ -40,6 +56,8 @@ export default {
 
 <style lang='scss' scoped>
 
+@import '../../assets/style/_variables.scss';
+
 header {
     height: 80px;
 
@@ -58,20 +76,57 @@ header {
     }
 
     nav {
-        ul {
+        & > ul {
             height: 100%;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: flex-end;
 
-            a {
+            & > li {
+                height: 100%;
+                margin-left: 30px;
+                position: relative;
+                line-height: 80px;
 
-                .fa-chevron-down {
-                    font-size: .6em;
-                    margin-left: 5px;
+                & > a {
+
+                    height: 100%;
+                    display: inline-block;
+
+                    .fa-chevron-down {
+                        font-size: .6em;
+                        margin-left: 5px;
+                    }
+                }
+
+                &:hover > a {
+                    color: $mainGreen;
+                }
+
+                &:hover .dropdown {
+                    display: block;
                 }
             }
 
+        }
+
+        .dropdown {
+            display: none;
+            background-color: #fff;
+            position: absolute;
+            top: 100%;
+            left: -10px;
+            padding: 20px 40px 20px 20px;
+            border-bottom: 5px solid $mainGreen;
+
+            & > ul > li {
+                white-space: nowrap;
+                padding: 10px 0;
+                line-height: initial;
+
+                &:hover a {
+                    color: $mainGreen;
+                }
+            }
         }
     }
 }

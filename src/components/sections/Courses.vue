@@ -2,13 +2,20 @@
     <section class="section-bg-grey">
         <div class="container py-5">
             
+            <!-- title -->
             <h3 class="sub-title text-center">Stimulated to learn?</h3>
             <h2 class="mt-2 mb-5 medium-title text-center">Featured Online Courses</h2>
 
+            <!-- cards -->
             <div class="row row-cols-2 g-5">
                 <div class="col" v-for="(course, index) in courses" :key="index">
                     <CourseCard :courseInfo="course"/>
                 </div>
+            </div>
+
+            <!-- button -->
+            <div class="text-center my-5">
+                <button class="btn-green">View all courses <i class="fas fa-long-arrow-alt-right"></i></button>
             </div>
 
         </div>

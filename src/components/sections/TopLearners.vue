@@ -13,6 +13,17 @@
             <!-- carousel -->
             <CustomCarousel/>
 
+            <!-- get start now -->
+            <div class="get_start text-center mb-5">
+                <h3 class="mt-5">Start today for getting <span class="text-green">Online Certification</span></h3>
+                <h2 class="mt-2 mb-5 big-title">You can be your own guiding star with our help!</h2>
+                <button class="btn-green">Get started now</button>
+
+                <img src="../../assets/img/maxcoach-shape-01.png" alt="shape 01" class="shape sh-01">
+                <img src="../../assets/img/maxcoach-shape-02.png" alt="shape 02" class="shape sh-02">
+                <div class="circle-shape koromiko shape"></div>
+            </div>
+
         </div>
 
     </section>
@@ -31,8 +42,32 @@ export default {
 
 <style lang='scss' scoped>
 
-h2 span {
+h2 span,
+h3 span {
     font-weight: normal;
+}
+
+.get_start {
+    position: relative;
+
+    .shape {
+        position: absolute;
+
+        &.sh-01 {
+            top: 50%;
+            left: 20%;
+        }
+
+        &.sh-02 {
+            top: 60%;
+            right: 10%;
+        }
+
+        &.circle-shape {
+            top: 15%;
+            left: 18%;
+        }
+    }
 }
 
 </style>

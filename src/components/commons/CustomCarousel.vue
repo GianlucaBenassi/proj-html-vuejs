@@ -1,10 +1,21 @@
 <template>
-    <carousel :per-page="1" :navigate-to="someLocalProperty" :mouse-drag="false">
+    <carousel 
+        :per-page="3" 
+        :mouse-drag="true"
+        :scrollPerPage="true"
+        :loop="true"
+    >
         <slide>
             Slide 1 Content
         </slide>
         <slide>
             Slide 2 Content
+        </slide>
+        <slide>
+            Slide 3 Content
+        </slide>
+        <slide>
+            Slide 4 Content
         </slide>
     </carousel>
 </template>
@@ -15,12 +26,12 @@ import { Carousel, Slide } from 'vue-carousel';
 export default {
     name: 'CustomCarousel',
     components: {
-    Carousel,
-    Slide
-  }
+        Carousel,
+        Slide
+    }
 }
 </script>
 
-<style lang='scss'>
+<style lang='scss' scoped>
 
 </style>

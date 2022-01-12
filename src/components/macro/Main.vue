@@ -5,6 +5,7 @@
         <SmartTutoring/>
         <TopLearners/>
         <Data/>
+        <BestBlogs/>
     </main>
 </template>
 
@@ -14,6 +15,7 @@ import Courses from '../sections/Courses.vue';
 import SmartTutoring from '../sections/SmartTutoring.vue';
 import TopLearners from '../sections/TopLearners.vue';
 import Data from '../sections/Data.vue';
+import BestBlogs from '../sections/BestBlogs.vue';
 
 export default {
     name: 'Main',
@@ -22,7 +24,8 @@ export default {
         Courses,
         SmartTutoring,
         TopLearners,
-        Data
+        Data,
+        BestBlogs
     }
 }
 </script>

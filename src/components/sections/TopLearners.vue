@@ -11,7 +11,7 @@
             <h2 class="mt-2 mb-5 medium-title text-center">Our <span class="text-green">top learners'</span> verbatim</h2>
 
             <!-- carousel -->
-            <CustomCarousel/>
+            <CustomSwiper/>
 
             <!-- get start now -->
             <div class="get_start text-center mb-5">
@@ -30,12 +30,12 @@
 </template>
 
 <script>
-import CustomCarousel from '../commons/CustomCarousel.vue';
+import CustomSwiper from '../commons/CustomSwiper.vue';
 
 export default {
     name: 'TopLearners',
     components: {
-        CustomCarousel
+        CustomSwiper
     }
 }
 </script>

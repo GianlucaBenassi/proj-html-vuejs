@@ -149,3 +149,11 @@ h1,h2,h3 {
 .hover-text-green:hover {
     color: $mainGreen;
 }
+
+.border-left-grey {
+    border-left: 1px solid $veryLightGrey;
+}
+
+.border-right-grey {
+    border-right: 1px solid $veryLightGrey;
+}

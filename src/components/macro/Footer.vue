@@ -4,7 +4,7 @@
             <div class="row">
 
                 <!-- address + socials column -->
-                <div class="col">
+                <div class="col-6">
                     <h4 class="text-color mb-3">Adress</h4>
                     <span class="d-block text-color-light mb-3">382 NE 191st St # 87394 Miami, FL 33179-3899</span>
                     <span class="d-block text-color-light mb-3">+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)</span>
@@ -18,8 +18,13 @@
                 </div>
 
                 <!-- dynamic links column -->
-                <div class="col">
-
+                <div class="col" v-for="(link, index) in footerLinks" :key="index">
+                    <h4 class="text-color mb-3">{{link.title}}</h4>
+                    <ul :class="'dynamic_list--' + index ">
+                        <li class="mb-3" v-for="(text, i) in link.links" :key="i">
+                            <a href="#" class="text-color-light hover-text-green">{{text}}</a>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
@@ -31,7 +36,7 @@
 export default {
     name: 'Footer',
     props: {
-        FooterLinks: Array
+        footerLinks: Array
     }
 }
 </script>
@@ -48,6 +53,15 @@ h4 {
 
 .socials {
     font-size: 1.6rem;
+}
+
+.dynamic_list--0{
+    display: flex;
+    flex-wrap: wrap;
+    
+    li {
+        width: 50%;
+    }
 }
 
 </style>

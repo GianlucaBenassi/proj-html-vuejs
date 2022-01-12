@@ -85,21 +85,19 @@ export default {
 }
 
 .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
     margin: 0 10px !important;
     transition: all .3s;
 
     &:hover {
         background-color: $gunPowder;
-        transform: scale(1.3);
+        transform: scale(1.5);
         opacity: 1;
     }
 }
 
 .swiper-pagination-bullet-active {
     background-color: $gunPowder;
-    transform: scale(1.3);
+    transform: scale(1.5);
 }
 
 </style>

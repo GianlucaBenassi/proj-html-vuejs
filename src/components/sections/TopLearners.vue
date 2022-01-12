@@ -10,14 +10,22 @@
             <h3 class="sub-title text-center">Great words about maxcoach</h3>
             <h2 class="mt-2 mb-5 medium-title text-center">Our <span class="text-green">top learners'</span> verbatim</h2>
 
+            <!-- carousel -->
+            <CustomCarousel/>
+
         </div>
 
     </section>
 </template>
 
 <script>
+import CustomCarousel from '../commons/CustomCarousel.vue';
+
 export default {
-    name: 'TopLearners'
+    name: 'TopLearners',
+    components: {
+        CustomCarousel
+    }
 }
 </script>
 

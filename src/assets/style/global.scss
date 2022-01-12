@@ -59,6 +59,7 @@ h1,h2,h3 {
     }
 
     input {
+        width: 100%;
         background-color: $veryLightGrey;
         border: 1px solid #fff;
         border-radius: 5px;
@@ -84,9 +85,24 @@ h1,h2,h3 {
         cursor: pointer;
         transition: all .3s;
 
-        &:hover {
+        &.grey {
+            color: $mainGreen;
+            background-color: transparent;
+
+            &:hover {
+                color: #fff;
+            background-color: $mainGreen;
+            }
+        }
+
+
+        &.green {
             color: #fff;
             background-color: $mainGreen;
+
+            &:hover {
+                background-color: $gunPowder;
+            }
         }
     }
 }
@@ -119,6 +135,10 @@ h1,h2,h3 {
 
     &.koromiko {
         border-color: $koromiko;
+    }
+
+    &.green {
+        border-color: $lightGreen;
     }
 }
 

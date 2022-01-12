@@ -33,7 +33,7 @@
                         <li class="d-flex align-items-center">
                             <div class="custom-search">
                                 <input type="text" placeholder="Search...">
-                                <button>
+                                <button class="grey">
                                     <i class="fas fa-search"></i>
                                 </button>
                             </div>

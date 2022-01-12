@@ -73,6 +73,7 @@ export default {
                 spaceBetween: 30,
                 loop: true,
                 centeredSlides: true,
+                speed: 800,
                 pagination: {
                     clickable: true,
                     el: '.swiper-pagination'
@@ -108,6 +109,11 @@ export default {
             text-transform: uppercase;
         }
     }
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+    opacity: 50%;
 }
 
 .swiper-pagination {

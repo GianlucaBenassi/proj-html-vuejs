@@ -3,6 +3,7 @@
         <DistantLearning/>
         <Courses/>
         <SmartTutoring/>
+        <TopLearners/>
     </main>
 </template>
 
@@ -10,13 +11,15 @@
 import DistantLearning from '../sections/DistantLearning.vue';
 import Courses from '../sections/Courses.vue';
 import SmartTutoring from '../sections/SmartTutoring.vue';
+import TopLearners from '../sections/TopLearners.vue';
 
 export default {
     name: 'Main',
     components: {
         DistantLearning,
         Courses,
-        SmartTutoring
+        SmartTutoring,
+        TopLearners
     }
 }
 </script>

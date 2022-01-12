@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div class="container py-5">
+        <div class="container pt-5">
 
             <!-- title -->
             <h3 class="sub-title text-center">maxcoach available courses</h3>
@@ -60,6 +60,7 @@
             </div>
 
         </div>
+
     </section>
 </template>
 
@@ -87,7 +88,6 @@ h2 span{
 
 
 .yt_video {
-    margin-bottom: 200px;
 
     .youtube {
         border-radius: 5px;

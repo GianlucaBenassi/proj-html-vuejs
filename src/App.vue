@@ -2,7 +2,7 @@
   <div id="app">
     <Header :navLinks="navText"/>
     <Main/>
-    <Footer/>
+    <Footer :footerLinks="footerLinks"/>
   </div>
 </template>
 

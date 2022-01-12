@@ -98,6 +98,28 @@ export default {
             'Single Product'
           ]
         }
+      ],
+      footerLinks: [
+        {
+          title: 'Explore',
+          links: [
+            'Start here',
+            'Success story',
+            'Blog',
+            'Courses',
+            'About us',
+            'Contact us'
+          ]
+        },
+        {
+          title: 'Information',
+          links: [
+            'Membership',
+            'Purchase guide',
+            'Privacy policy',
+            'Terms of services'
+          ]
+        }
       ]
     }
   }

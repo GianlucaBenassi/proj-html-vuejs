@@ -28,8 +28,6 @@ export default {
                 spaceBetween: 30,
                 loop: true,
                 centeredSlides: true,
-                slidePrevClass: 'swiper-slide-prev sw_prev',
-                slideNextClass: 'swiper-slide-next sw_next',
                 pagination: {
                     clickable: true,
                     el: '.swiper-pagination'
@@ -39,7 +37,7 @@ export default {
     },
     computed: {
         swiper() {
-            return this.$refs.mySwiper.$swiper
+            return this.$refs.mySwiper.$swiper;
         }
     }
 }
@@ -47,9 +45,38 @@ export default {
 
 <style lang='scss'>
 
+@import '../../assets/style/_variables.scss';
+
 .sw_slide {
     background-color: red;
     height: 200px;
+}
+
+.swiper-pagination {
+    position: relative;
+
+    &.swiper-pagination-bullets{
+        bottom: 0;
+        margin-top: 30px;
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 10px !important;
+    transition: all .3s;
+
+    &:hover {
+        background-color: $gunPowder;
+        transform: scale(1.3);
+        opacity: 1;
+    }
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $gunPowder;
+    transform: scale(1.3);
 }
 
 </style>

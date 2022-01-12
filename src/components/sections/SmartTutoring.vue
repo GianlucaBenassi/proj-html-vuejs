@@ -32,6 +32,30 @@
 
             </div>
 
+            <!-- YouTube video -->
+            <div class="row yt_video">
+
+                <!-- video -->
+                <div class="col-7">
+                    <a href="#" class="d-block youtube">
+                        <div class="video">
+                            <img src="../../assets/img/home-2-popup-video-poster.jpg" alt="Companionship video" class="d-block">
+                        </div>
+                        <img src="../../assets/img/icon-youtube-play.png" alt="YouTube logo" class="yt_logo">
+                        <img src="../../assets/img/maxcoach-shape-05.png" alt="shape-01" class="shape sh-01">
+                        <img src="../../assets/img/maxcoach-shape-09.png" alt="shape-02" class="shape sh-02">
+                        <img src="../../assets/img/maxcoach-shape-07.png" alt="shape-03" class="shape sh-03">
+                        <div class="shape circle-shape koromiko"></div>
+                    </a>
+                </div>
+
+                <!-- description -->
+                <div class="col-5">
+                    desc
+                </div>
+
+            </div>
+
         </div>
     </section>
 </template>
@@ -48,10 +72,72 @@ h2 span{
     font-weight: normal;
 }
 
+
+
 .info_cards {
+    margin-bottom: 170px;
+
     .fa-long-arrow-alt-right {
         margin-left: 6px;
     }
+}
+
+
+.yt_video {
+    margin-bottom: 200px;
+
+    .youtube {
+        border-radius: 5px;
+        position: relative;
+
+
+        .video {
+            border-radius: inherit;
+            overflow: hidden;
+            img {
+                width: 100%;
+                transition: all .8s;
+            }
+        }
+
+        &:hover .video img {
+            transform: scale(1.1);
+        }
+
+        .yt_logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        .shape {
+            position: absolute;
+            z-index: -1;
+
+            &.sh-01 {
+                top: 50px;
+                left: -60px;
+            }
+
+            &.sh-02 {
+                top: -100px;
+                left: -40px;
+            }
+
+            &.sh-03 {
+                bottom: -100px;
+                right: -15px;
+            }
+
+            &.circle-shape {
+                top: -40px;
+                right: -80px;
+            }
+        }
+    }
+
 }
 
 </style>

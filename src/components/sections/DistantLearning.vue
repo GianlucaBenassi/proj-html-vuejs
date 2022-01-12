@@ -99,6 +99,11 @@ export default {
             right: -20px;
             z-index: 1;
         }
+
+        &.circle-shape {
+            bottom: 20%;
+            left: 0;
+        }
     }
 }
 

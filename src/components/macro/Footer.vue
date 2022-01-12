@@ -1,7 +1,7 @@
 <template>
     <footer class="section-bg-grey">
         <div class="container py-5">
-            <div class="row">
+            <div class="row mb-5">
 
                 <!-- address + socials column -->
                 <div class="col-6">
@@ -28,6 +28,10 @@
                 </div>
 
             </div>
+
+            <!-- copyright -->
+            <p class="text-color-light text-center"><i class="far fa-copyright"></i> 2020 Maxcoach. All Rights Reserved</p>
+
         </div>
     </footer>
 </template>

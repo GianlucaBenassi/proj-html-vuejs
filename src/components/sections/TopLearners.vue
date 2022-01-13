@@ -19,9 +19,9 @@
                 <h2 class="mt-2 mb-5 big-title">You can be your own guiding star with our help!</h2>
                 <button class="btn-green">Get started now</button>
 
-                <img src="../../assets/img/maxcoach-shape-01.png" alt="shape 01" class="shape sh-01">
-                <img src="../../assets/img/maxcoach-shape-02.png" alt="shape 02" class="shape sh-02">
-                <div class="circle-shape koromiko shape"></div>
+                <img src="../../assets/img/maxcoach-shape-01.png" alt="shape 01" class="d-none d-md-block shape sh-01">
+                <img src="../../assets/img/maxcoach-shape-02.png" alt="shape 02" class="d-none d-md-block shape sh-02">
+                <div class="d-none d-md-block circle-shape koromiko shape"></div>
             </div>
 
         </div>
@@ -64,7 +64,7 @@ h3 span {
         }
 
         &.circle-shape {
-            top: 15%;
+            top: -20px;
             left: 18%;
         }
     }

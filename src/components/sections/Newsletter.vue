@@ -37,11 +37,24 @@ export default {
 }
 
 .custom-search {
-    width: 30%;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        & {
+            width: 70%;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        & {
+            width: 40%;
+        }
+    }
 }
 
 .shape {
     position: absolute;
+    z-index: -1;
 
     &.sh-01 {
         top: 40%;
@@ -54,7 +67,7 @@ export default {
     }
 
     &.circle-shape {
-        top: 45%;
+        top: 40%;
         left: 10%;
     }
 }

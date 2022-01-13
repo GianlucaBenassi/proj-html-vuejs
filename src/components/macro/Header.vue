@@ -52,6 +52,25 @@
             <!-- mobile menu -->
             <div v-if="dataShared.navOpenMenu" class="mobile_menu p-4">
                 <ul>
+                    
+                    <!-- login icon -->
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center text-color mobile_login">
+                            <i class="far fa-user-circle"></i>
+                            <span class="ms-2">Login</span>
+                        </a>
+                    </li>
+
+                    <!-- search bar -->
+                    <li class="mb-3 mobile_custom-search">
+                        <div class="custom-search">
+                            <input type="text" placeholder="Search...">
+                            <button class="grey">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </li>
+
                     <!-- list title -->
                     <li v-for="(link, index) in navLinks" :key="index">
                         <a href="#" class="d-block mobile_title text-color">{{link.title}}</a>
@@ -181,6 +200,19 @@ header {
         top: 81px;
         left: 0;
         right: 0;
+
+        .mobile_login {
+            font-size: 2rem;
+
+            span {
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+        }
+
+        .mobile_custom-search {
+            max-width: 400px;
+        }
 
         .mobile_title {
             font-size: 1.2rem;

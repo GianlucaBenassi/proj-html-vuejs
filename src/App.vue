@@ -136,25 +136,31 @@ export default {
   methods: {
     onResize() {
       // check window size
-      if (window.innerWidth < 768) {
-        this.dataShared.smScreen = true;
-        this.dataShared.mdScreen = false;
-        this.dataShared.lgScreen = false;
-        this.dataShared.navOpenMenu = false;
-      } else if (window.innerWidth < 992) {
-        this.dataShared.smScreen = false;
-        this.dataShared.mdScreen = true;
-        this.dataShared.lgScreen = false;
-        this.dataShared.navOpenMenu = false;
-      } else {
-        this.dataShared.smScreen = false;
-        this.dataShared.mdScreen = false;
-        this.dataShared.lgScreen = true;
-        this.dataShared.navOpenMenu = false;
+      if (this.dataShared.winWidth != window.innerWidth) {
+
+        this.dataShared.winWidth = window.innerWidth;
+
+        if (window.innerWidth < 768) {
+          this.dataShared.smScreen = true;
+          this.dataShared.mdScreen = false;
+          this.dataShared.lgScreen = false;
+          this.dataShared.navOpenMenu = false;
+        } else if (window.innerWidth < 992) {
+          this.dataShared.smScreen = false;
+          this.dataShared.mdScreen = true;
+          this.dataShared.lgScreen = false;
+          this.dataShared.navOpenMenu = false;
+        } else {
+          this.dataShared.smScreen = false;
+          this.dataShared.mdScreen = false;
+          this.dataShared.lgScreen = true;
+          this.dataShared.navOpenMenu = false;
+        }
       }
     }
   },
   mounted() {
+    this.dataShared.winWidth = window.innerWidth;
     this.onResize();
     window.addEventListener('resize', this.onResize, {passive: true});
   }

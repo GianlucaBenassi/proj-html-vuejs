@@ -174,10 +174,6 @@ h1,h2,h3 {
     color: $mainGreen;
 }
 
-.border-left-grey {
-    border-left: 1px solid $veryLightGrey;
-}
-
-.border-right-grey {
-    border-right: 1px solid $veryLightGrey;
+.border-grey {
+    border: 1px solid $veryLightGrey;
 }

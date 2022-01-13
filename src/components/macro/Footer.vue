@@ -1,10 +1,10 @@
 <template>
     <footer class="section-bg-grey">
         <div class="container py-5">
-            <div class="row mb-5">
+            <div class="row mb-lg-5">
 
                 <!-- address + socials column -->
-                <div class="col-6">
+                <div class="col-12 col-lg-6 mb-5 mb-lg-0">
                     <h4 class="text-color mb-3">Adress</h4>
                     <span class="d-block text-color-light mb-3">382 NE 191st St # 87394 Miami, FL 33179-3899</span>
                     <span class="d-block text-color-light mb-3">+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)</span>
@@ -18,10 +18,10 @@
                 </div>
 
                 <!-- dynamic links column -->
-                <div class="col" v-for="(link, index) in footerLinks" :key="index">
+                <div class="col dynamic_col mb-5 mb-lg-0" v-for="(link, index) in footerLinks" :key="index">
                     <h4 class="text-color mb-3">{{link.title}}</h4>
                     <ul :class="'dynamic_list--' + index ">
-                        <li class="mb-3" v-for="(text, i) in link.links" :key="i">
+                        <li class="mb-3 dynamic_elm" v-for="(text, i) in link.links" :key="i">
                             <a href="#" class="text-color-light hover-text-green">{{text}}</a>
                         </li>
                     </ul>
@@ -59,6 +59,10 @@ h4 {
     font-size: 1.6rem;
 }
 
+.dynamic_col {
+    min-width: 170px;
+}
+
 .dynamic_list--0{
     display: flex;
     flex-wrap: wrap;
@@ -66,6 +70,10 @@ h4 {
     li {
         width: 50%;
     }
+}
+
+.dynamic_elm {
+    white-space: nowrap;
 }
 
 </style>

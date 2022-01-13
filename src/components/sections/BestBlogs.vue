@@ -4,7 +4,7 @@
             <div class="row">
 
                 <!-- description -->
-                <div class="col-4">
+                <div class="col-12 col-lg-4 mb-5 mb-lg-8" :class="{'text-center' : dataShared.mdScreen}">
 
                     <h3 class="sub-title">enjoy insights</h3>
                     <h2 class="mt-3 mb-5 medium-title">Most viewed <span class="text-green">Best Blogs</span></h2>
@@ -20,11 +20,11 @@
                 </div>
 
                 <!-- posts -->
-                <div class="col-8">
+                <div class="col-12 col-lg-8">
 
-                    <div class="row">
+                    <div class="row row-cols-1 row-cols-md-2">
 
-                        <div class="col px-5">
+                        <div class="col px-1 px-md-3 px-xl-5 mb-5 mb-md-0">
                             <div class="blog_post">
 
                                 <div class="image">
@@ -41,7 +41,7 @@
                             </div>
                         </div>
 
-                        <div class="col px-5">
+                        <div class="col px-1 px-md-3 px-xl-5">
                             <div class="blog_post">
 
                                 <div class="image">
@@ -68,8 +68,15 @@
 </template>
 
 <script>
+import dataShared from '../../shared/dataShared';
+
 export default {
-    name: 'BestBlogs'
+    name: 'BestBlogs',
+    data() {
+        return {
+            dataShared
+        }
+    }
 }
 </script>
 
@@ -92,11 +99,14 @@ li::before {
 
 
 .blog_post {
+    height: 100%;
+    background-color: #fff;
     border-radius: 5px;
-    overflow: hidden;
 
     .image {
         overflow: hidden;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
 
         img {
             width: 100%;
@@ -111,6 +121,8 @@ li::before {
 
     .desc {
         background-color: #fff;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
 
         .type {
             text-transform: uppercase;

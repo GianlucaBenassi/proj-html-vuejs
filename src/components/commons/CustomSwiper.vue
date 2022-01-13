@@ -109,6 +109,7 @@ export default {
     background-color: #fff;
     height: auto;
     border-radius: 5px;
+    opacity: 50%;
 
     .user {
         img {
@@ -123,9 +124,8 @@ export default {
     }
 }
 
-.swiper-slide-prev,
-.swiper-slide-next {
-    opacity: 50%;
+.swiper-slide-active {
+    opacity: 100%;
 }
 
 .swiper-pagination {

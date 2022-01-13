@@ -7,16 +7,16 @@
             <h2 class="mt-2 mb-5 medium-title text-center">Access <span class="text-green">Smart Tutoring</span> Program For Benefits.</h2>
 
             <!-- info cards -->
-            <div class="row info_cards">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center info_cards">
 
-                <div class="col">
+                <div class="col mb-5 mb-md-0">
                     <img src="../../assets/img/home-2-image-box-01.png" alt="Preferences image">
                     <h3 class="my-3">Customize Preferences</h3>
                     <p class="text-color-light mb-3">Learners are given the right to arrange and customize their study schedule and timetable based on preferences.</p>
                     <a href="#" class="text-gunPowder hover-text-green">Start here <i class="fas fa-long-arrow-alt-right"></i></a>
                 </div>
 
-                <div class="col">
+                <div class="col mb-5 mb-md-0">
                     <img src="../../assets/img/about-us-02-image-box-02.png" alt="Preferences image">
                     <h3 class="my-3">Cloud Storage</h3>
                     <p class="text-color-light mb-3">You can store lessons via online cloud or download to your device and revise lessons on the way.</p>
@@ -36,7 +36,7 @@
             <div class="row yt_video">
 
                 <!-- video -->
-                <div class="col-7">
+                <div class="col-12 col-md-7 mb-5 mb-md-0">
                     <a href="#" class="d-block youtube">
                         <div class="video">
                             <img src="../../assets/img/home-2-popup-video-poster.jpg" alt="Companionship video" class="d-block">
@@ -44,13 +44,13 @@
                         <img src="../../assets/img/icon-youtube-play.png" alt="YouTube logo" class="yt_logo">
                         <img src="../../assets/img/maxcoach-shape-05.png" alt="shape-01" class="shape sh-01">
                         <img src="../../assets/img/maxcoach-shape-09.png" alt="shape-02" class="shape sh-02">
-                        <img src="../../assets/img/maxcoach-shape-07.png" alt="shape-03" class="shape sh-03">
-                        <div class="shape circle-shape koromiko"></div>
+                        <img src="../../assets/img/maxcoach-shape-07.png" alt="shape-03" class="shape sh-03 d-none d-md-block">
+                        <div class="d-none d-md-block shape circle-shape koromiko"></div>
                     </a>
                 </div>
 
                 <!-- description -->
-                <div class="col-5 mt-5 ps-5">
+                <div class="col-12 col-md-5 mt-5 ps-5">
                     <h3 class="sub-title">get started <span class="text-color">effortlessly</span></h3>
                     <h2 class="mt-3 mb-4 big-title">Enjoy Our <span class="text-green">companionship</span></h2>
                     <p class="text-color-light mb-5">Sneek peek into what jas in store for you on our online traching and mentoring portal. Seek for some hidden hint of early-bird rewards as well.</p>
@@ -75,8 +75,6 @@ export default {
 h2 span{
     font-weight: normal;
 }
-
-
 
 .info_cards {
     margin-bottom: 170px;

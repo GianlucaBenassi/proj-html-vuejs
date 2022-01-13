@@ -15,6 +15,9 @@ import Footer from './components/macro/Footer.vue';
 import FixedMenu from './components/commons/FixedMenu.vue';
 import TopAnchor from './components/commons/TopAnchor.vue';
 
+// shared data
+import dataShared from './shared/dataShared';
+
 export default {
   name: 'App',
   components: {
@@ -126,8 +129,34 @@ export default {
             'Terms of services'
           ]
         }
-      ]
+      ],
+      dataShared
     }
+  },
+  methods: {
+    onResize() {
+      // check window size
+      if (window.innerWidth < 768) {
+        this.dataShared.smScreen = true;
+        this.dataShared.mdScreen = false;
+        this.dataShared.lgScreen = false;
+        this.dataShared.navOpenMenu = false;
+      } else if (window.innerWidth < 992) {
+        this.dataShared.smScreen = false;
+        this.dataShared.mdScreen = true;
+        this.dataShared.lgScreen = false;
+        this.dataShared.navOpenMenu = false;
+      } else {
+        this.dataShared.smScreen = false;
+        this.dataShared.mdScreen = false;
+        this.dataShared.lgScreen = true;
+        this.dataShared.navOpenMenu = false;
+      }
+    }
+  },
+  mounted() {
+    this.onResize();
+    window.addEventListener('resize', this.onResize, {passive: true});
   }
 }
 </script>

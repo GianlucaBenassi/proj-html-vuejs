@@ -50,7 +50,7 @@
                 </div>
 
                 <!-- description -->
-                <div class="col-12 col-md-5 mt-5 ps-5">
+                <div class="col-12 col-md-5 mt-5 ps-md-5">
                     <h3 class="sub-title">get started <span class="text-color">effortlessly</span></h3>
                     <h2 class="mt-3 mb-4 big-title">Enjoy Our <span class="text-green">companionship</span></h2>
                     <p class="text-color-light mb-5">Sneek peek into what jas in store for you on our online traching and mentoring portal. Seek for some hidden hint of early-bird rewards as well.</p>

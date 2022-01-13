@@ -7,7 +7,7 @@
             <h2 class="mt-2 mb-5 medium-title text-center">Featured Online Courses</h2>
 
             <!-- cards -->
-            <div class="row row-cols-2 g-5">
+            <div class="row row-cols-1 row-cols-lg-2 g-5">
                 <div class="col" v-for="(course, index) in courses" :key="index">
                     <CourseCard :courseInfo="course"/>
                 </div>

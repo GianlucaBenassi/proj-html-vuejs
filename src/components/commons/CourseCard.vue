@@ -15,10 +15,10 @@
             </span>
             <span v-else class="price text-green">{{courseInfo.price}}</span>
             
-            <h4 class="my-3 hover-text-green">{{courseInfo.title}}</h4>
-            <div class="infos">
-                <span class="text-color-light me-5"><i class="far fa-file-alt"></i> {{courseInfo.lessons}} Lessons</span>
-                <span class="text-color-light"><i class="far fa-user"></i> {{courseInfo.students}} Students</span>
+            <h4 class="mt-3 mb-2 hover-text-green">{{courseInfo.title}}</h4>
+            <div class="d-flex flex-wrap">
+                <span class="text-color-light mt-2 me-5"><i class="far fa-file-alt"></i> {{courseInfo.lessons}} Lessons</span>
+                <span class="text-color-light mt-2"><i class="far fa-user"></i> {{courseInfo.students}} Students</span>
             </div>
         </div>
 

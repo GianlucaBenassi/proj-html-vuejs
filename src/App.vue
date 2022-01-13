@@ -136,4 +136,8 @@ export default {
 
 @import './assets/style/global.scss';
 
+#app {
+  position: relative;
+}
+
 </style>

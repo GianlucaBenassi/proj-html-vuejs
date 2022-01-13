@@ -3,6 +3,7 @@
     <Header :navLinks="navText"/>
     <Main/>
     <Footer :footerLinks="footerLinks"/>
+    <FixedMenu/>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import Header from './components/macro/Header.vue';
 import Main from './components/macro/Main.vue';
 import Footer from './components/macro/Footer.vue';
+import FixedMenu from './components/commons/FixedMenu.vue';
 
 export default {
   name: 'App',
   components: {
     Header,
     Main,
-    Footer
+    Footer,
+    FixedMenu
   },
   data() {
     return {
